@@ -12,8 +12,7 @@ with open("Input") as f:
 
 with open("Input") as f:
     text = f.read()
-    x = text[line for pos, line in enumerate(
-        f.readlines()) if pos % 2 != 0]
+    x = [line for pos, line in enumerate(f.readlines()) if pos % 2 != 0]
 
 print(x)
 
